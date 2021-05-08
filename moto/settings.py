@@ -79,11 +79,8 @@ WSGI_APPLICATION = 'moto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'book',
-        'USER': 'postgres',
-        'PASSWORD': 'eden',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
